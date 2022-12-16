@@ -1,3 +1,3 @@
 ## Learning HTML CSS React using Udemy
 
-[HTML, CSS, React - Certification Course for Beginners](https://www.udemy.com/course/html-css-react-certification-course-for-beginners/){:target="_blank"}
+[https://www.udemy.com/course/html-css-react-certification-course-for-beginners/](https://www.udemy.com/course/html-css-react-certification-course-for-beginners/) {:target="_blank"}
