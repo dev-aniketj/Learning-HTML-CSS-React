@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Form tag</title>
+</head>
+
+<body>
+  <form name="employment" action="send.php" method="post">
+    <table width="600" bordercolor="red" cellspacing="2" cellpadding="5">
+
+      <tr>
+        <th colspan="2" align="center" style="font-size: 30px">
+          Employment Application
+        </th>
+      </tr>
+
+      <tr>
+        <td align="center">Full Name : </td>
+        <td align="center"><input type="text" style="width: 190px;" /></td>
+      </tr>
+
+      <tr>
+        <td align="center">Last Name : </td>
+        <td align="center"><input type="text" style="width: 190px;" /></td>
+      </tr>
+
+      <tr>
+        <td align="center">Position : </td>
+        <td align="center">
+          <select name="position" style="width: 200px;">
+            <option value=" accountant">Accountant</option>
+            <option value="tester">Tester</option>
+            <option value="developer">Software Developer</option>
+            <option value="supervisor">SuperVisor</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">Experience Level : </td>
+        <td align="center">
+          <select name="experience" style="width: 200px;">
+            <option value="entry">Entry Level</option>
+            <option value="some">Some Experience</option>
+            <option value="very">Very Experienced</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">Job Type : </td>
+        <td align="center">
+          <input type="checkbox" name="ft" />Full-Time
+          <input type="checkbox" name="pt" />Part-Time
+          <input type="checkbox" name="ct" />Contact
+        </td>
+      </tr>
+
+
+      <tr>
+        <td align="center">Employment Status :</td>
+        <td align="center">
+          <input type="radio" name="e_status" value="employed" />Employed
+          <input type="radio" name="e_status" value="unemployed" />Unemployed
+          <input type="radio" name="e_status" value="student" />Student
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center">Additional Comments : </td>
+        <td align="center">
+          <textarea name="content" cols="32" rows="10" placeholder="Enter some comments here..."></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="right"><input style="width: 120px; height: 34px;" type="submit" name="submit" value="Submit" /></td>
+        <td align="left"><input style="width: 120px; height: 34px;" type="reset" align="left" name="reset"
+            value="Reset" /></td>
+        <td></td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
