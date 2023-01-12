@@ -13,9 +13,13 @@ const Calculator = () => {
     let newValue = value;
     if (!calc.isInitial) {
       newValue = calc.current + value;
-      calc.isInitial = false;
     }
-    setCalc({ current: newValue, total: calc.total });
+    setCalc({
+      current: newValue,
+      total: calc.total,
+      isInitial: false,
+      preOp: calc.preOp,
+    });
   };
 
   const handleOperator = (value) => {
@@ -30,6 +34,7 @@ const Calculator = () => {
 
   function doCalculation() {
     let total = parseInt(calc.total);
+
     switch (calc.preOp) {
       case "+":
         total += parseInt(calc.current);
@@ -60,10 +65,6 @@ const Calculator = () => {
       isInitial: true,
       preOp: "",
     });
-  }
-
-  function handleEquals() {
-    let 
   }
 
   return (
